@@ -79,27 +79,25 @@ tfjs.converters.save_keras_model(model, "tfjs_model")
 model.export("saved_model")
 ```
 
-## Struktur Folder
+## 📁 Struktur Direktori
 
-\`\`\`
+```
 submission/
-│
-├── tfjs_model/                # Model dalam format TFJS
-│   ├── model.json
-│   └── group1-shard1of1.bin
-│
-├── tflite/                    # Model dalam format TensorFlow Lite
-│   ├── model.tflite
-│   └── label.txt
-│
-├── saved_model/              # Model dalam format SavedModel
+├── notebook.ipynb                      # Notebook pelatihan dan export model
+├── README.md                           # Dokumentasi proyek
+├── requirements.txt                    # Dependency Python
+├── saved_model/                        # Format TensorFlow SavedModel
+│   ├── fingerprint.pb
 │   ├── saved_model.pb
 │   └── variables/
-│
-├── notebook.ipynb            # Notebook untuk pelatihan dan konversi model
-├── README.md                 # Dokumentasi proyek
-└── requirements.txt          # Daftar dependensi Python
-\`\`\`
+│       ├── variables.data-00000-of-00001
+│       └── variables.index
+├── tfjs_model/                         # Model untuk TensorFlow.js (website)
+│   ├── model.json
+│   └── group1-shard1of1.bin
+├── tflite/                             # Model untuk perangkat mobile (TFLite)
+│   └── model.tflite
+```
 
 ## Cara Menjalankan
 
