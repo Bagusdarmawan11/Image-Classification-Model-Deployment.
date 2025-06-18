@@ -82,7 +82,7 @@ model.export("saved_model")
 ## 📁 Struktur Direktori
 
 ```
-submission/
+Klasifikasi-Gambar-Sayuran/
 ├── notebook.ipynb                      # Notebook pelatihan dan export model
 ├── README.md                           # Dokumentasi proyek
 ├── requirements.txt                    # Dependency Python
